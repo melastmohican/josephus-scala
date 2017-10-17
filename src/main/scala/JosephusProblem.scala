@@ -8,11 +8,8 @@ object JosephusProblem {
     require(n > 0, "n must be greater than zero")
     require(k >= 1 || k < n, "k is out of range!")
 
-    val people: Queue[Int] = Queue()
-    (0 until n).foreach {
-      people += _
-    }
-
+    val people: Queue[Int] = Queue((0 until n): _*)
+    
     while (people.size > 1) {
       (1 until k).foreach {
         people += people.dequeue
@@ -21,5 +18,4 @@ object JosephusProblem {
     }
     people.dequeue
   }
-
 }
