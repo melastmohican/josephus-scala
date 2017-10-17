@@ -2,7 +2,7 @@ package com.example.josephusscala
 
 import org.specs2.mutable._
 
-class MainSpec extends Specification {
+class JosephusProblemSpec extends Specification {
 
   "The 'Hello world' string" should {
     "contain 11 characters" in {
