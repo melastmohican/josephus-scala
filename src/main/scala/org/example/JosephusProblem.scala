@@ -15,7 +15,7 @@ object JosephusProblem {
     *
     * @param n people in the circle
     * @param k step rate
-    * @return
+    * @return last person left
     */
   def josephus(n: Int, k: Int): Int = {
     require(n > 0, "n must be greater than zero")
